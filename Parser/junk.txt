@@ -1,0 +1,92 @@
+﻿            /*if (char.IsLetter(source[sourcePosition]) || isPrintable)
+            {
+                if (isLetterBefore())
+                {
+                    throw new Exception();
+                }
+
+                do
+                {
+                    buffer += source[sourcePosition];
+                    sourcePosition++;
+                } while (sourcePosition < source.Length && (char.IsLetter(source[sourcePosition]) /*|| source[sourcePosition] == '(' || 
+                        source[sourcePosition] == ')'));
+
+                //RADI
+                if (buffer == "print")
+                {
+                    isPrintable = true;
+                    if (source[sourcePosition] == '('/* || isPrintable) //PRAVI GRESKU ZA SAD
+                    {
+                        do
+                        {
+                            if(source[sourcePosition] == '(')
+                            {
+                                openBracketCounter++;
+                            }
+                            if(source[sourcePosition] == ')')
+                            {
+                                closedBracketCounter--;
+                            }
+                            buffer += source[sourcePosition];
+                            sourcePosition++;
+                        } while (sourcePosition < source.Length && source[sourcePosition] != ')');
+                        sourcePosition++;
+                    }
+                }
+
+                if (buffer.Contains("print"))
+                {
+                    //string[] temp = buffer.Split('(');
+                    string bufferHelp = "";
+                    /*foreach(var symbol in temp[1])
+                    {
+                        if(symbol != ')')
+                        {
+                            bufferHelp += symbol;
+                        }
+                    }
+                    for (int length = 6; length < buffer.Length; length++)
+                    {
+                        bufferHelp += buffer[length];
+                    }
+                    isPrintable = false;
+                    return new Token("print", bufferHelp);
+                }
+                else
+                {
+                    return new Token("identificator", buffer);
+                }
+
+            }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //RADI
+            /*if (token.Type == "print")
+            {
+                string printString = token.Value;
+                Next();
+                if (dictionary.ContainsKey((printString)))
+                {
+                    Console.WriteLine(dictionary[printString]);
+                    return null;
+                }
+                else
+                {
+                    isPrintable = true;
+                    //throw new Exception();
+                }
+            }*/
